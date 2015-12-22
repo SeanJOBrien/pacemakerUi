@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en' data-ng-app='pacemaker'>
+  <head>
+    <title>pacemaker</title>
+    <meta name='viewport' content='width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes'>
+    <!-- inject:head:js -->
+    <!-- endinject -->
+    <!-- inject:html -->
+    <!-- endinject -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+    <!-- endbower -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/activities/views/activities.css">
+    <link rel="stylesheet" href="css/home/views/home.css">
+    <!-- endinject -->
+  </head>
+  <body>
+    <div class='navbar navbar-inverse' role='navigation'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <button class='navbar-toggle collapsed' type='button' data-ng-init='navCollapsed = true' data-ng-click='navCollapsed = !navCollapsed'>
+            <span class='sr-only'>Toggle Navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+        </div>
+        <div class='navbar-collapse collapse' collapse='navCollapsed'>
+          <ul class='nav navbar-nav'>
+            <li>
+              <a href="#/home" ng-click="">Pacemaker</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class='container'>
+      <div data-ng-view>
+
+      </div>
+    </div>
+
+    <!-- bower:js -->
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="vendor/angular-route/angular-route.js"></script>
+    <script src="vendor/angular-cookies/angular-cookies.js"></script>
+    <!-- endbower -->
+    <!-- inject:js -->
+    <script src="js/home/home-module.js"></script>
+    <script src="js/home/controllers/home-controller.js"></script>
+    <script src="js/activities/activities-module.js"></script>
+    <script src="js/activities/controllers/activities-controller.js"></script>
+    <script src="js/home/home-routes.js"></script>
+    <script src="js/app-module.js"></script>
+    <script src="js/factories/api-factory.js"></script>
+    <script src="js/constants/api-url-constant.js"></script>
+    <script src="js/activities/activities-routes.js"></script>
+    <script src="js/app-routes.js"></script>
+    <!-- endinject -->
+  </body>
+</html>

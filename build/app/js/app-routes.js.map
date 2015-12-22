@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["app-routes.js"],"sourcesContent":["(function () {\n  'use strict';\n\n  angular\n    .module('pacemaker')\n    .config(config);\n\n  function config($routeProvider) {\n    $routeProvider.otherwise({\n      redirectTo: '/home'\n    });\n  }\n}());\n"],"file":"app-routes.js","sourceRoot":"/source/"}

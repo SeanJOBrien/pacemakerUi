@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["activities/activities-module.js"],"sourcesContent":["(function () {\n  'use strict';\n\n  /* @ngdoc object\n   * @name activities\n   * @description\n   *\n   */\n  angular\n    .module('activities', [\n      'ngRoute'\n    ]);\n}());\n"],"file":"activities/activities-module.js","sourceRoot":"/source/"}
